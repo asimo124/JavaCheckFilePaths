@@ -61,11 +61,11 @@ public class Main {
         Collections.sort(uniqueFolderPaths);
 
         boolean hasWritten = false;
+
+        boolean doFind = !(Main.fileSearchTerm.contains("!"));
+        Main.fileSearchTerm = Main.fileSearchTerm.replace("!", "");
         for (String filePath: uniqueFolderPaths) {
             BufferedReader reader;
-
-            boolean doFind = !Main.fileSearchTerm.contains("!");
-            Main.fileSearchTerm = Main.fileSearchTerm.replace("!", "");
 
             boolean didFind = false;
             try {
@@ -89,8 +89,7 @@ public class Main {
                 e.printStackTrace();
             }
 
-            if ((doFind && didFind) || !doFind && !didFind) {
-                System.out.println();
+            if ((doFind && didFind) || (!doFind && !didFind)) {
 
                 try  {
 
@@ -98,12 +97,12 @@ public class Main {
                         BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Temp\\check_file_paths_output.txt"));
                         writer.write(filePath.replace(main.LocalDir, "") + "\n");
                         writer.close();
-                        System.out.print(filePath.replace(main.LocalDir, ""));
+                        System.out.println(filePath.replace(main.LocalDir, ""));
                         hasWritten = true;
                     } else {
                         BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Temp\\check_file_paths_output.txt", true));
                         writer.append(filePath.replace(main.LocalDir, "") + "\n");
-                        System.out.print(filePath.replace(main.LocalDir, ""));
+                        System.out.println(filePath.replace(main.LocalDir, ""));
                         writer.close();
                     }
 

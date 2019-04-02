@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22aad530-5cf0-476a-bdb0-100605413921" name="Default" comment="">
+    <list default="true" id="22aad530-5cf0-476a-bdb0-100605413921" name="Default" comment="Fixed small issue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CheckFilePaths.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CheckFilePaths.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VersionProjects/info/alexhawley/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VersionProjects/info/alexhawley/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/info/alexhawley/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/info/alexhawley/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,33 +17,15 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/info/alexhawley/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="159" column="5" selection-start-line="159" selection-start-column="5" selection-end-line="159" selection-end-column="5" />
+            <state relative-caret-position="478">
+              <caret line="104" column="80" selection-start-line="104" selection-start-column="80" selection-end-line="104" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/kodehelp/sftp/ListRecursiveFolderSFTP.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/info/alexhawley/DownloadFTP.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -61,6 +43,7 @@
     <findStrings>
       <find>Files</find>
       <find>showFiles</find>
+      <find>ClaimIntake.php</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\AHawley\Documents\JavaClaimatic\CheckFilePaths\src</dir>
@@ -77,8 +60,8 @@
         <option value="$PROJECT_DIR$/src/com/kodehelp/sftp/DownloadFolderRecursivelyFromSFTP.java" />
         <option value="$PROJECT_DIR$/src/info/alexhawley/DownloadFTP.java" />
         <option value="$PROJECT_DIR$/src/com/kodehelp/sftp/DownloadRecursiveFolderFromSFTP.java" />
-        <option value="$PROJECT_DIR$/src/info/alexhawley/Main.java" />
         <option value="$PROJECT_DIR$/src/com/kodehelp/sftp/ListRecursiveFolderSFTP.java" />
+        <option value="$PROJECT_DIR$/src/info/alexhawley/Main.java" />
       </list>
     </option>
   </component>
@@ -93,8 +76,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -107,10 +88,47 @@
               <item name="Java_CheckFilePaths" type="462c0819:PsiDirectoryNode" />
               <item name="libs" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Java_CheckFilePaths" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java_CheckFilePaths" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java_CheckFilePaths" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java_CheckFilePaths" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java_CheckFilePaths" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java_CheckFilePaths" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="VersionProjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java_CheckFilePaths" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java_CheckFilePaths" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java_CheckFilePaths" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java_CheckFilePaths" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sftp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java_CheckFilePaths" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java_CheckFilePaths" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="alexhawley" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -118,7 +136,7 @@
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="CheckFilePaths" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554235396032" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554236578087" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -164,7 +182,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="info.alexhawley.Main" />
       <module name="VersionProjects" />
-      <option name="PROGRAM_PARAMETERS" value="Entity !toString" />
+      <option name="PROGRAM_PARAMETERS" value="Entity &quot;!toString&quot;" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
@@ -239,13 +257,21 @@
       <option name="presentableId" value="Default" />
       <updated>1487629733219</updated>
     </task>
+    <task id="LOCAL-00001" summary="Finished CLI App.">
+      <created>1554235440002</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554235440002</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34541577" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2750533" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -255,7 +281,7 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34994584" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34994584" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -276,6 +302,10 @@
       <window_info anchor="right" id="Maven" order="9" />
     </layout>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finished CLI App." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished CLI App." />
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
@@ -284,16 +314,6 @@
     <entry file="file://$PROJECT_DIR$/src/info/alexhawley/FileMaster.java" />
     <entry file="file://$PROJECT_DIR$/src/info/alexhawley/DownloadRecursiveFolderFromSFTP.java" />
     <entry file="file://$PROJECT_DIR$/src/com/kodehelp/sftp/DownloadFolderRecursivelyFromSFTP.java" />
-    <entry file="file://$PROJECT_DIR$/src/info/alexhawley/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="159" column="5" selection-start-line="159" selection-start-column="5" selection-end-line="159" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/info/alexhawley/DownloadFTP.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="798">
@@ -303,8 +323,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kodehelp/sftp/ListRecursiveFolderSFTP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+        <state relative-caret-position="298">
+          <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/info/alexhawley/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="104" column="80" selection-start-line="104" selection-start-column="80" selection-end-line="104" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
