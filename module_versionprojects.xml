@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_versionprojects" default="compile.module.versionprojects">
+  <dirname property="module.versionprojects.basedir" file="${ant.file.module_versionprojects}"/>
+  
+  <property name="module.jdk.home.versionprojects" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.versionprojects" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.versionprojects" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.versionprojects" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="versionprojects.output.dir" value="${module.versionprojects.basedir}/out/production/VersionProjects"/>
+  <property name="versionprojects.testoutput.dir" value="${module.versionprojects.basedir}/out/test/VersionProjects"/>
+  
+  <path id="versionprojects.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="versionprojects.module.production.classpath">
+    <path refid="${module.jdk.classpath.versionprojects}"/>
+    <path refid="library.jsch-0.1.54.classpath"/>
+    <path refid="library.commons-net-3.6.classpath"/>
+  </path>
+  
+  <path id="versionprojects.runtime.production.module.classpath">
+    <pathelement location="${versionprojects.output.dir}"/>
+    <path refid="library.jsch-0.1.54.classpath"/>
+    <path refid="library.commons-net-3.6.classpath"/>
+  </path>
+  
+  <path id="versionprojects.module.classpath">
+    <path refid="${module.jdk.classpath.versionprojects}"/>
+    <pathelement location="${versionprojects.output.dir}"/>
+    <path refid="library.jsch-0.1.54.classpath"/>
+    <path refid="library.commons-net-3.6.classpath"/>
+  </path>
+  
+  <path id="versionprojects.runtime.module.classpath">
+    <pathelement location="${versionprojects.testoutput.dir}"/>
+    <pathelement location="${versionprojects.output.dir}"/>
+    <path refid="library.jsch-0.1.54.classpath"/>
+    <path refid="library.commons-net-3.6.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.versionprojects">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.versionprojects">
+    <patternset refid="excluded.from.module.versionprojects"/>
+  </patternset>
+  
+  <path id="versionprojects.module.sourcepath">
+    <dirset dir="${module.versionprojects.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.versionprojects" depends="compile.module.versionprojects.production,compile.module.versionprojects.tests" description="Compile module VersionProjects"/>
+  
+  <target name="compile.module.versionprojects.production" depends="register.custom.compilers" description="Compile module VersionProjects; production classes">
+    <mkdir dir="${versionprojects.output.dir}"/>
+    <javac2 destdir="${versionprojects.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.versionprojects}/javac">
+      <compilerarg line="${compiler.args.versionprojects}"/>
+      <bootclasspath refid="versionprojects.module.bootclasspath"/>
+      <classpath refid="versionprojects.module.production.classpath"/>
+      <src refid="versionprojects.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.versionprojects"/>
+    </javac2>
+    
+    <copy todir="${versionprojects.output.dir}">
+      <fileset dir="${module.versionprojects.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.versionprojects.tests" depends="register.custom.compilers,compile.module.versionprojects.production" description="compile module VersionProjects; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.versionprojects" description="cleanup module">
+    <delete dir="${versionprojects.output.dir}"/>
+    <delete dir="${versionprojects.testoutput.dir}"/>
+  </target>
+</project>
